@@ -2,7 +2,7 @@
 **Teach** ChatGPT to learn [Alda](https://github.com/alda-lang/alda) language, **Show** it the superb code, then **Consult** it on how to create music.
 
 
-## 1. Teach Chat-GPT to learn `Alda` language
+## 1. Teach ChatGPT to learn `Alda` language
 ```bash
 >>> python teach.py
 Let's test Alda language learning!
@@ -19,13 +19,13 @@ This paragraph of code represents a measure of music that begins at the C major 
 The first two notes are quarter notes (C and D), and the third note is an eighth note (E). The last note is a quarter note (F).
 ```
 
-## 2. Show Chat-GPT some works written by humans
+## 2. Show ChatGPT some works written by humans
 Here I'm using [alda/examples](https://github.com/alda-lang/alda/tree/master/examples) to make context.
 ```bash
 python show.py # will generate a `vectorstore.pkl` file from all .alda files.
 ```
 
-## 3. Consult Chat-GPT to create your music
+## 3. Consult ChatGPT to create your music
 ```bash
 >>> python consult.py
 Let's consult the music master!
@@ -51,5 +51,8 @@ https://user-images.githubusercontent.com/6824141/222706396-6b73c35c-3974-477a-b
 
 
 ## Have Fun!
-You can change the `data` or `learning task` to whatever you like. Tell me if you've created other interesting things inspired by this repo:)
+This repo is only for fun!
+You can change the `data` or `learning task` to whatever you like. 
+
+Tell me if you've created other interesting things inspired by this repo:)
 
