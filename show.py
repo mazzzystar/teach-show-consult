@@ -15,8 +15,12 @@ source_file_lst = glob.glob("source_data/alda/examples/*")
 all_codes = ""
 f_alda = open("source_data/alda_all_in_one.txt", 'w')
 for alda_file in source_file_lst:
-    line = str(open(alda_file, 'r').readlines())
-    f_alda.write(line+"\n\n")
+    lines = open(alda_file, 'r').readlines()
+    clean_lines = []
+    for line in lines:
+        if line.strip().startswith('#'): continue
+        clean_lines.append(line.strip()+"\n")
+    f_alda.write(str(clean_lines)+"\n\n")
 f_alda.close()
 
 # Load

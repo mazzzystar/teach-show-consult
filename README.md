@@ -28,18 +28,23 @@ python show.py # will generate a `vectorstore.pkl` file from all .alda files.
 ## 3. Consult Chat-GPT to create your music
 ```bash
 >>> python consult.py
-Let's consult music master!
+Let's consult the music master!
 You:
- c d8 > g
-Music Master:
 c d8 > g
+Music Master:
+
+
 (tempo! 120)
 piano:
-c d8 > g e4 d c8 | < b4 > c d8 | < a4 b > c8 | < g4 r8 r4 | > c8 < g > c < b a | b f b a g f+ a f+ a f+ d+ f+ d+ f+ a f+ 
-a f+ o3 g f+ e g f+ g a f+ g f+ e d c < b a g o2 f+ > c d c d c d c < f+ > c d c d c d c o2 g b > f e f < b > f < b g b > 
-f e f < b > f < b o2 g > c e d e c e c < g > c e d e c e c o2 g > f+ > c < b > c < f+ > c < f+ < g > f+ > c < b > c < f+ > 
-c < f+ o2 g > d b a b g f+ e d c < b a g f+ e d o2 c+ a > e f+ g e f+ g < c+
+c4 d8 > g4 c4. <g4~4. >c4. d4~4. c4. <g4~4. >c4. d4~4. c8 r d e g b2~12 > d12 g | d8 r < b4~8~ > d8 < {b > d g}4 | 
+g8 r f+4 f {e_ g b}4 | g8 r f+4 f {e_ g b}4 | (quant 40) > d4 (quant 90) e-4~8 e8 d- c | < b_ > d4~ f8 < b_4 > c | 
+< b_8 > (ff) d4~ e8 (f) c2 | < a-2. > c4 < a2~ f b_2 > (mf) c8 c4~ d8 | < a-2 r8 > c4~ d8 | < a-2 r8 f4~ (p) g8 | 
+(pp) a_16~ b~ a_~ b_ (p) > c~
+
+[INFO] Notes saved to: output.alda
 ```
+
+## Let's listen!
 
 ## Have Fun!
 You can change the `data` or `learning task` to whatever you like. Tell me if you've created other interesting things inspired by this repo:)

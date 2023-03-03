@@ -17,6 +17,8 @@ d) You can even have double flats/sharps: such as "f++", which equals "g"
 e) By default, notes in Alda are quarter notes. You can set the length of a note by adding a number after it. The number represents the note type, e.g. 4 for a quarter note, 8 for an eighth, 16 for a sixteenth, etc.
 f) Rests in Alda work just like notes; they’re kind of like notes that you can’t hear. A rest is represented as the letter r.
 g) You can use dotted notes, too. Simply add one or more .s onto the end of a note length.
+h) You can add note durations together using a tie, which in Alda is represented as a tilde ~.
+i) If a line starts with #, it means this line is a code comment.
 Now, you probably know the basic programming language."""
 
 TEST_PROMOPT = ALDA_LANG_RULE + """Could you please tell me what the following paragraph means:

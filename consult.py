@@ -18,7 +18,7 @@ Standalone question:"""
 CONDENSE_QUESTION_PROMPT = PromptTemplate.from_template(_template)
 
 template = ALDA_LANG_RULE+"""You are given the following extracted parts of the fragments taken from many beautiful musical works written in Alda language and a user input fregment. Provide a conversational answer to guide the user on what to write next. 
-You need to let the parts you suggest and the parts provided by the user make up the beautiful music. Your answer needs to be a complete Adla-formatted code containing tempo, and the note part starts with the note input provided by the user.
+You need to let the parts you suggest and the parts provided by the user make up the beautiful music. Your answer must be a complete and correct Alda code and the note section must begin with the one provided by the user.
 User Input: {question}
 =========
 {context}
@@ -43,11 +43,15 @@ if __name__ == "__main__":
         vectorstore = pickle.load(f)
     qa_chain = get_chain(vectorstore)
     chat_history = []
-    print("Let's consult music master!")
+    print("Let's consult the music master!")
     while True:
         print("You:")
         question = input()
         result = qa_chain({"question": question, "chat_history": chat_history})
         chat_history.append((question, result["answer"]))
         print("Music Master:")
-        print(question+result["answer"])
+        print(result["answer"])
+        f = open('output.alda', 'w')
+        f.write(result["answer"])
+        f.close()
+        print("\n[INFO] Notes saved to: output.alda")
