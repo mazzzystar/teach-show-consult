@@ -46,6 +46,10 @@ g8 r f+4 f {e_ g b}4 | g8 r f+4 f {e_ g b}4 | (quant 40) > d4 (quant 90) e-4~8 e
 
 ## Let's listen!
 
+https://user-images.githubusercontent.com/6824141/222706396-6b73c35c-3974-477a-bb3e-0c3f2e40717e.mov
+
+
+
 ## Have Fun!
 You can change the `data` or `learning task` to whatever you like. Tell me if you've created other interesting things inspired by this repo:)
 
