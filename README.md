@@ -1,6 +1,7 @@
 # Teach-Show-Consult
 **Teach** ChatGPT to learn [Alda](https://github.com/alda-lang/alda) language, **Show** it the superb code, then **Consult** it on how to create music.
 
+You can read [my post](https://mazzzystar.github.io/2023/03/03/teach-show-consult-gpt/) for a more detailed explanation.
 
 ## 1. Teach ChatGPT to learn `Alda` language
 ```bash
