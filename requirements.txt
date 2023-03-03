@@ -1,0 +1,6 @@
+langchain
+openai
+unstructured
+faiss-cpu
+gradio
+mido
