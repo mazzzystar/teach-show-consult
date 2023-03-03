@@ -1,4 +1,4 @@
-# compose-inspiration
+# Teach-Show-Consult
 **Teach** ChatGPT to learn [Alda](https://github.com/alda-lang/alda) language, **Show** it the superb code, then **Consult** it on how to create music.
 
 
