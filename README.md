@@ -4,6 +4,19 @@
 You can read [my post](https://mazzzystar.github.io/2023/03/03/teach-show-consult-gpt/) for a more detailed explanation.
 
 ## 1. Teach ChatGPT to learn `Alda` language
+In this step, all I have to do is to use Prompt Engineering to give ChatGPT as many syntax rules as possible for the `Alda` language.
+```bash
+ALDA_LANG_RULE = """You are a musician as well as a technologist who is well versed in programming. 
+Now you've been asked to learn a new language called Alda, which allows you to create music as if you were programming. 
+I will now tell you its rules:
+1.The alda program usually starts with (tempo! number), which is stating the tempo of the music as this number.
+2.Next, the instrument is usually specified, e.g. "piano:", which means that the music will be played on a piano. Other instruments supported are: acoustic-guitar, cello, flute, violin, etc.
+3.Immediately after that, comes the part of the notes. Let me illustrate the main features of this program.
+a) The default is quarter notes, which means that you type "c d e f", which represents a measure that has four quarter notes: C, D, E and F.
+b) The ">" symbol means...
+```
+
+Let's test to see how much it has learned:
 ```bash
 >>> python teach.py
 Let's test Alda language learning!
@@ -21,12 +34,13 @@ The first two notes are quarter notes (C and D), and the third note is an eighth
 ```
 
 ## 2. Show ChatGPT some works written by humans
-Here I'm using [alda/examples](https://github.com/alda-lang/alda/tree/master/examples) to make context.
+Here I'm using [alda/examples](https://github.com/alda-lang/alda/tree/master/examples) to show some subtle code examples for ChatGPT to learn from.
 ```bash
 python show.py # will generate a `vectorstore.pkl` file from all .alda files.
 ```
 
-## 3. Consult ChatGPT to create your music
+## 3. Consult with ChatGPT to create your melody
+
 ```bash
 >>> python consult.py
 Let's consult the music master!
