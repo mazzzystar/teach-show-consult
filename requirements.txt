@@ -2,5 +2,5 @@ langchain==0.0.98
 openai==0.26.5
 unstructured==0.5.1
 faiss-cpu==1.7.3
-gradio==3.19.1
+gradio==3.34.0
 mido==1.2.10
